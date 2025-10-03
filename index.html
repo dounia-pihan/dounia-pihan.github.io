@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Data Analyst</title>
+  <meta name="description" content="Portfolio Data Analyst – SQL, Python, Power BI, Excel" />
+  <meta property="og:title" content="Portfolio – Data Analyst" />
+  <meta property="og:description" content="Projets : Dashboard Power BI, Data Cleaning, NLP, Scraping…" />
+  <meta property="og:type" content="website" />
+
+  <!-- Inter font -->
+  <link href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap__;!!JmtQ7uFmLckTLA!_-yBJn0X2JUakJaYe9N5eBb7voOta-W6DHBY6K1ZM6FrV4w5xqq56AP3grQWFhPtJKWME6A5Gfs5MapNoPZQi0ytEEo$" rel="stylesheet">
+  <!-- Tailwind via CDN (aucun build requis pour GitHub Pages) -->
+  <script src="https://urldefense.com/v3/__https://cdn.tailwindcss.com__;!!JmtQ7uFmLckTLA!_-yBJn0X2JUakJaYe9N5eBb7voOta-W6DHBY6K1ZM6FrV4w5xqq56AP3grQWFhPtJKWME6A5Gfs5MapNoPZQBf-WcN0$"></script>
+  <style>
+    html { scroll-behavior:smooth }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji" }
+    /* douce ombre et arrondis cohérents */
+    .card { border-radius:1.25rem; box-shadow: 0 10px 25px rgba(0,0,0,.08) }
+    .chip { border-radius: 9999px; padding:.25rem .625rem; line-height:1; font-size:.75rem }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-800 to-fuchsia-700"></div>
+    <div class="relative max-w-6xl mx-auto px-6 py-24 sm:py-28 md:py-32 text-white">
+      <div class="max-w-3xl">
+        <p class="uppercase tracking-widest/relaxed text-sm/relaxed text-white/80">Portfolio</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">Votre Nom<br/>Data Analyst</h1>
+        <p class="mt-5 text-white/90 text-lg sm:text-xl max-w-2xl">SQL • Python • Power BI • Excel. Je transforme des données brutes en décisions claires : reporting automatisé, visualisations pertinentes et analyses reproductibles.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#projets" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-white text-neutral-900 font-semibold hover:bg-neutral-100 transition">Voir les projets <span aria-hidden>→</span></a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl ring-1 ring-white/50 font-semibold hover:bg-white/10 transition">Me contacter</a>
+        </div>
+        <div class="mt-6 flex items-center gap-2 text-white/80 text-sm">
+          <span class="chip bg-white/15">Disponible pour alternance / mission</span>
+          <span class="chip bg-white/15">Paris / Remote</span>
+        </div>
+      </div>
+      <div class="absolute -right-24 -bottom-24 w-[36rem] h-[36rem] rounded-full bg-white/10 blur-3xl pointer-events-none"></div>
+    </div>
+  </header>
+
+  <!-- PROJETS -->
+  <main id="projets" class="max-w-6xl mx-auto px-6 py-16 sm:py-20">
+    <div class="flex items-end justify-between gap-6">
+      <h2 class="text-2xl sm:text-3xl font-bold">Projets mis en avant</h2>
+      <a href="#contact" class="text-sm font-medium text-indigo-700 hover:text-indigo-900">Demander une démo</a>
+    </div>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- CARD 1 -->
+      <article class="card bg-white p-4">
+        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-neutral-200 to-neutral-100 flex items-center justify-center">
+          <span class="text-neutral-500 text-sm">Image / capture de votre dashboard</span>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold">Tableau de bord commercial (Power BI)</h3>
+          <p class="mt-2 text-sm text-neutral-600">KPI, tendances mensuelles, RLS par région, navigation avec boutons et paramètre de champs, et export automatisé.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="chip bg-indigo-50 text-indigo-700">Power BI</span>
+            <span class="chip bg-indigo-50 text-indigo-700">DAX</span>
+            <span class="chip bg-indigo-50 text-indigo-700">Power Query</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-medium text-indigo-700 hover:text-indigo-900" href="#" target="_blank" rel="noopener">Voir la démo</a>
+            <a class="text-sm text-neutral-500 hover:text-neutral-700" href="#" target="_blank" rel="noopener">Code / README</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card bg-white p-4">
+        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-neutral-200 to-neutral-100 flex items-center justify-center">
+          <span class="text-neutral-500 text-sm">Image d'une carte / graph réseau</span>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold">Analyse SNCF : tarifs & CO₂</h3>
+          <p class="mt-2 text-sm text-neutral-600">Nettoyage et jointure (tarifs TGV, gares, émissions), calcul du prix/km, cartes et comparaisons Inoui/Ouigo.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="chip bg-green-50 text-green-700">Python</span>
+            <span class="chip bg-green-50 text-green-700">Pandas</span>
+            <span class="chip bg-green-50 text-green-700">GeoJSON</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-medium text-indigo-700 hover:text-indigo-900" href="#" target="_blank" rel="noopener">Notebook</a>
+            <a class="text-sm text-neutral-500 hover:text-neutral-700" href="#" target="_blank" rel="noopener">Repo GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card bg-white p-4">
+        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-neutral-200 to-neutral-100 flex items-center justify-center">
+          <span class="text-neutral-500 text-sm">Image Streamlit / NLP</span>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold">Classement de CV (NLP)</h3>
+          <p class="mt-2 text-sm text-neutral-600">App Streamlit pour scorer des CV par mots clés et pondération, export des candidats top N.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="chip bg-fuchsia-50 text-fuchsia-700">Streamlit</span>
+            <span class="chip bg-fuchsia-50 text-fuchsia-700">scikit learn</span>
+            <span class="chip bg-fuchsia-50 text-fuchsia-700">NLP</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-medium text-indigo-700 hover:text-indigo-900" href="#" target="_blank" rel="noopener">Essayer l’app</a>
+            <a class="text-sm text-neutral-500 hover:text-neutral-700" href="#" target="_blank" rel="noopener">Repo GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Skills -->
+    <section class="mt-12">
+      <h3 class="text-xl font-semibold">Compétences clés</h3>
+      <ul class="mt-4 flex flex-wrap gap-2 text-sm">
+        <li class="chip bg-neutral-200">SQL (Oracle, PostgreSQL)</li>
+        <li class="chip bg-neutral-200">Python (Pandas, NumPy, Matplotlib)</li>
+        <li class="chip bg-neutral-200">Power BI (DAX, RLS, Paramètres de champs)</li>
+        <li class="chip bg-neutral-200">ETL / Power Query</li>
+        <li class="chip bg-neutral-200">Git / GitHub</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ABOUT / CONTACT -->
+  <section id="contact" class="bg-white border-t border-neutral-200/70">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold">À propos</h2>
+        <p class="mt-4 text-neutral-700 leading-relaxed">Data analyst orienté·e produit, j'aime concevoir des tableaux de bord clairs et des pipelines fiables. Mon travail récent : migration Excel → Power BI, modèles de sécurité RLS, et automatisation des KPIs mensuels pour les équipes commerciales.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold">Contact</h2>
+        <ul class="mt-4 space-y-2 text-neutral-700">
+          <li>📧 <a class="underline decoration-indigo-400 decoration-2 underline-offset-4 hover:text-neutral-900" href="mailto:prenom.nom@example.com">prenom.nom@example.com</a></li>
+          <li>🐙 <a class="underline decoration-indigo-400 decoration-2 underline-offset-4 hover:text-neutral-900" href="https://urldefense.com/v3/__https://github.com/votre-login__;!!JmtQ7uFmLckTLA!_-yBJn0X2JUakJaYe9N5eBb7voOta-W6DHBY6K1ZM6FrV4w5xqq56AP3grQWFhPtJKWME6A5Gfs5MapNoPZQHN09Xgc$" target="_blank" rel="noopener">github.com/votre-login</a></li>
+          <li>💼 <a class="underline decoration-indigo-400 decoration-2 underline-offset-4 hover:text-neutral-900" href="https://urldefense.com/v3/__https://www.linkedin.com/in/votre-profil/__;!!JmtQ7uFmLckTLA!_-yBJn0X2JUakJaYe9N5eBb7voOta-W6DHBY6K1ZM6FrV4w5xqq56AP3grQWFhPtJKWME6A5Gfs5MapNoPZQniiqOJU$" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-neutral-500 py-8">
+    © <span id="y"></span> Votre Nom — hébergé sur GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
