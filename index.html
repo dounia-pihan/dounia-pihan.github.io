@@ -24,7 +24,14 @@
 <body class="bg-neutral-50 text-neutral-900">
   <!-- HERO -->
   <header class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-800 to-fuchsia-700"></div>
+    <!-- Vidéo en arrière-plan -->
+<video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+  <source src="Assets/background_presentation.mp4" type="video/mp4">
+</video>
+
+<!-- Overlay sombre pour lisibilité du texte -->
+<div class="absolute inset-0 bg-black/50"></div>
+
     <div class="relative max-w-6xl mx-auto px-6 py-24 sm:py-28 md:py-32 text-white">
       <div class="max-w-3xl">
         <p class="uppercase tracking-widest/relaxed text-sm/relaxed text-white/80">Portfolio</p>
